@@ -1,0 +1,351 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: hsla(206, 100%, 45%, 0.9);
+    color: #ffffff;
+}
+/* Nav Bar */
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    display: flex;
+}
+
+.logo h1{
+    font-size: 4rem;
+    font-family: 'Rampart One', cursive;
+}
+
+.nav-menu{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.nav-menu  li a{
+    text-decoration: none;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    display: block;
+    font-family: 'Rampart One', cursive;
+}
+
+.nav-menu li a:hover{
+    background-color: #1b9bff;
+}
+
+/* Laptop Screen */
+@media only screen and (max-width:1140px){
+    header{
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-menu{
+        padding: 1rem;
+    }
+}
+
+/* Tablet Screen */
+@media only screen and (max-width: 768px) {
+    .logo h1{
+        font-size: 3rem;
+    }
+    .nav-menu li a{
+        font-size: 1.25rem;
+    }
+    
+}
+
+/* Mobile Screen */
+@media only screen and (max-width:514px){
+    .logo h1{
+        font-size: 2rem;
+    }
+    .logo img{
+        width: 20%;
+    }
+    .nav-menu li a {
+        font-size: 0.65rem;
+    }
+}
+
+/* Banner */
+.banner{
+    background-image: url('../images/Phone\ Repair.jpg');
+    background-size: cover;
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.banner-content{
+    background-color: hsla(206, 100%, 45%, 0.2);
+    text-align: center;
+}
+.banner-content h1{
+    font-size: 5rem;
+    font-family: 'Merienda', cursive;
+    
+}
+.banner-content h2{
+    font-size: 1.5rem;
+    font-family: 'Merienda', cursive;
+
+}
+
+/* Laptop Screen */
+@media only screen and (max-width:1140px){
+    .banner-content h1{
+        font-size: 3rem;
+    }
+    .banner-content h2{
+        font-size: 1.25rem;
+    }
+}
+
+/* Tablet Screen */
+@media only screen and (max-width:768px){
+    .banner-content h1{
+        font-size: 2.5rem;
+    }
+    .banner-content h2{
+        font-size: 1rem;
+    }
+}
+
+/* Mobile Screen */
+@media only screen and (max-width:514px) {
+    .banner-content h1{
+        font-size: 1.5rem;
+    }
+    .banner-content h2{
+        font-size: 0.75rem;
+        padding: 1rem;
+    }
+    .banner-content{
+        width: 75%;
+    }
+    .banner{
+        height: 20rem;
+    }
+}
+
+/* Services*/
+.services {
+    padding: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.service-content{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.service-content p {
+    padding: 1rem;
+    font-size: 1.75rem;
+}
+.service-content img{
+    width: 100%;
+    height: 100%;
+}
+
+/* Tablet Screen*/
+@media only screen and (max-width:885px) {
+    .service-content p{
+        font-size: 1.5rem;
+    }
+    .service-content{
+        align-items: center;
+    }
+    
+}
+
+/* Mobile Screen*/
+@media only screen and (max-width: 568px) {
+    .services{
+        justify-content: center;
+        padding: 1rem
+    }
+    .service-content img{
+        width: 70%;
+        height: 70%;
+    }
+    .service-content{
+        padding: 0rem;
+        align-items: center;
+    }
+    .service-content p{
+        font-size: 0.75rem;
+    }
+    
+}
+
+
+/* Team Members*/
+.members {
+    padding: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.member-name{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.member-name p {
+    padding: 1rem;
+    font-size: 1.75rem;
+}
+.member-name img{
+    width: 100%;
+    height: 100%;
+}
+/* Tablet Screen */
+@media only screen and (max-width:885px) {
+    .member-name p{
+        font-size: 1.5rem;
+    }
+    .member-name{
+        align-items: center;
+    }
+    
+}
+/* Mobile Screen */
+@media only screen and (max-width: 568px) {
+    .members{
+        justify-content: center;
+    }
+    .member-name{
+        padding: 0.15rem;
+    }
+    .member-name p{
+        font-size: 0.75rem;
+    }
+    
+}
+
+/* Contact Us*/
+.contact{
+    display: flex;
+    justify-content: space-around;
+}
+.contact-content{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 50%;
+}
+.contact-content h1{
+    font-family: 'Rampart One', cursive;
+    font-size: 3.5rem
+}
+.contact-content p{
+    font-size: 1.25rem;
+    padding: 1.5rem;
+    text-align: justify;
+}
+.contact-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact-info p{
+    font-size: 1.5rem;
+}
+/* Laptop Screen */
+@media only screen and (max-width:1028px) {
+    .contact-content h1{
+        font-size: 2.85rem
+    }
+    .contact-content img{
+        width: 20%;
+    }
+    .contact-content p{
+        font-size: 1.05rem;
+    }
+    .contact-info p{
+        font-size: 1.25rem;
+    }     
+}
+/* Tablet Screen */
+@media only screen and (max-width:852px) {
+    .contact-content h1{
+        font-size: 2rem
+    }
+    .contact-content img{
+        width: 15%;
+    }
+    .contact-content p{
+        font-size: 0.8rem;
+    }
+    .contact-info p{
+        font-size: 1rem;
+    } 
+}   
+/* Mobile Screen */
+@media only screen and (max-width:568px) {
+   
+    .contact{
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    }
+    .contact-content{
+        max-width: 75%;
+        justify-content: center;
+    }
+    .contact-content h1{
+        font-size: 1.5rem;
+    }
+    .contact-content p{
+        font-size: 0.75rem;
+    }
+    .contact-info p{
+        font-size: 0.75rem;
+    } 
+}
+
+/* Footer */
+.footer{
+    border-top: 2px solid #ffffff;
+}
+.footer p{
+    font-size: 1.25rem;
+    padding: 1rem;
+}
+/* Laptop Screen */
+@media only screen and (max-width: 1028px) {
+    .footer p{
+        font-size: 0.9rem;
+        padding: 0.5rem;
+    }    
+}
+/* Tablet Screen */
+@media only screen and (max-width: 852px) {
+    .footer p{
+        font-size: 0.65rem;
+        padding: 0.5rem;
+    }    
+}
+/* Mobile Screen */
+@media only screen and (max-width: 568px) {
+    .footer p{
+        font-size: 0.5rem;
+        padding: 0.5rem;
+    }    
+}
